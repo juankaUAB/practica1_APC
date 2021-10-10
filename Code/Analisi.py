@@ -34,6 +34,7 @@ print("Hi han valors buits/nulls? " + str(any(dataset.isnull().sum()) != 0))
 #Generem grafiques per tots els atributs d'entrada
 for i in range(x.shape[1]):
     plt.figure()
+    plt.ylabel('Numero de turistas')
     ax = plt.scatter(x[:,i],y)
     plt.savefig("../Grafiques/punts/" + "Atribut-" + str(i + 1) + ".png")
 
