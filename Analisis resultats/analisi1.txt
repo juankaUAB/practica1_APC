@@ -1,0 +1,16 @@
+Primera sessió de treball
+
+Passos:
+1.- Entendre les dades que tenim; que volem predir (el número de turistes que arriben a l'India) i amb quines dades comptem.
+2.- Hem carregat la base de dades a un dataset.
+3.- Hem normalitzat les dades per a obtenir uns resultats adients.
+4.- Hem generat la gràfica de núvol de punts per a cada variable per a observar la relació que tenen respecte la variable y.
+5.- Hem generat la gràfica de correlació agrupant les variables segons la variable y.
+
+Conclusions:
+- Observant les gràfiques, sobretot la de correlació amb un mapa de calor, podem veure que la majoria tenen una correlació per damunt del 0.6 (prou alta)
+- Dins aquest llindar, hi ha que tenen un valor molt alt (que tindràn una major wi quan executem la funció de cost).
+    -CQRSA: ninguna destaca, tot al voltant de 0.75 (f9 nomes 0.6)
+    -CQR: destaquem f13 amb un 0.89
+    -VNBQRSA: destaquem f22 amb un 0.8 i f29 es molt baix, 0.58
+    -VNBQR: el llindar general puja al 0.8 menys f39 que es 0.58
