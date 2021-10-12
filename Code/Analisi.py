@@ -31,12 +31,15 @@ print("Hi han valors buits/nulls? " + str(any(dataset.isnull().sum()) != 0))
 #Veure estadistiques de la BBDD
 #print(dataset.describe())
 
-#Generem grafiques per tots els atributs d'entrada
+#Generem grafiques de dispersió i histogrames per tots els atributs d'entrada
 for i in range(x.shape[1]):
     plt.figure()
     plt.ylabel('Numero de turistas')
     ax = plt.scatter(x[:,i],y)
     plt.savefig("../Grafiques/punts/" + "Atribut-" + str(i + 1) + ".png")
+    plt.figure()
+    plt.hist(x[:,i],rwidth=0.85)
+    plt.savefig("../Grafiques/histogrames/" + "Atribut-" + str(i + 1) + ".png")
 
 ''' Generació de grafiques de CORRELACIÓ per cada tipus de variable, amb els 4 quarts del any
     junts o els 4 quarts per separat (q1, q2, q3 i q4) '''
