@@ -1,0 +1,128 @@
+ - TEST DE SHAPIRO - 
+---------------------
+Atributo 1 : Estadistico: 0.9310226440429688   |   P-Valor: 0.007438221480697393
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 2 : Estadistico: 0.9318227171897888   |   P-Valor: 0.007964173331856728
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 3 : Estadistico: 0.9275426268577576   |   P-Valor: 0.005541222635656595
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 4 : Estadistico: 0.9485306739807129   |   P-Valor: 0.034957606345415115
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 5 : Estadistico: 0.9498547911643982   |   P-Valor: 0.03945790231227875
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 6 : Estadistico: 0.9104238748550415   |   P-Valor: 0.0013889194233343005
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 7 : Estadistico: 0.930905282497406   |   P-Valor: 0.007364195305854082
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 8 : Estadistico: 0.926337718963623   |   P-Valor: 0.005009464919567108
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 9 : Estadistico: 0.9297428131103516   |   P-Valor: 0.006671413779258728
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 10 : Estadistico: 0.9301544427871704   |   P-Valor: 0.006908510811626911
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 11 : Estadistico: 0.929861843585968   |   P-Valor: 0.006739069242030382
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 12 : Estadistico: 0.9318227171897888   |   P-Valor: 0.007964173331856728
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 13 : Estadistico: 0.938739001750946   |   P-Valor: 0.014518692158162594
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 14 : Estadistico: 0.942797839641571   |   P-Valor: 0.020818214863538742
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 15 : Estadistico: 0.9466241598129272   |   P-Valor: 0.029389504343271255
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 16 : Estadistico: 0.9114717245101929   |   P-Valor: 0.001507151871919632
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 17 : Estadistico: 0.9296976327896118   |   P-Valor: 0.006645915098488331
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 18 : Estadistico: 0.9283875823020935   |   P-Valor: 0.005949364043772221
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 19 : Estadistico: 0.9297428131103516   |   P-Valor: 0.006671413779258728
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 20 : Estadistico: 0.9341182708740234   |   P-Valor: 0.009701825678348541
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 21 : Estadistico: 0.9565034508705139   |   P-Valor: 0.07291853427886963
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 22 : Estadistico: 0.961554765701294   |   P-Valor: 0.11667726933956146
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 23 : Estadistico: 0.9342323541641235   |   P-Valor: 0.009797932580113411
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 24 : Estadistico: 0.9666876196861267   |   P-Valor: 0.18757160007953644
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 25 : Estadistico: 0.9663755297660828   |   P-Valor: 0.18227757513523102
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 26 : Estadistico: 0.9387417435646057   |   P-Valor: 0.014522221870720387
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 27 : Estadistico: 0.9585355520248413   |   P-Valor: 0.08809102326631546
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 28 : Estadistico: 0.9569852352142334   |   P-Valor: 0.07625852525234222
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 29 : Estadistico: 0.9447470903396606   |   P-Valor: 0.024801351130008698
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 30 : Estadistico: 0.9526813626289368   |   P-Valor: 0.051173802465200424
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 31 : Estadistico: 0.9577429890632629   |   P-Valor: 0.08182737976312637
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 32 : Estadistico: 0.961554765701294   |   P-Valor: 0.11667726933956146
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 33 : Estadistico: 0.9510560035705566   |   P-Valor: 0.04405725747346878
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 34 : Estadistico: 0.9685105681419373   |   P-Valor: 0.22149646282196045
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 35 : Estadistico: 0.9667056798934937   |   P-Valor: 0.18788284063339233
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 36 : Estadistico: 0.9418525099754333   |   P-Valor: 0.01913236267864704
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 37 : Estadistico: 0.9582562446594238   |   P-Valor: 0.08583066612482071
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 38 : Estadistico: 0.9652113914489746   |   P-Valor: 0.1637578308582306
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 39 : Estadistico: 0.9447470903396606   |   P-Valor: 0.024801351130008698
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 40 : Estadistico: 0.9665365815162659   |   P-Valor: 0.18499159812927246
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 41 : Estadistico: 0.926642894744873   |   P-Valor: 0.005138827953487635
+Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
+Atributo 42 : Estadistico: 0.9702536463737488   |   P-Valor: 0.2591400742530823
+No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal
+-----------------------------------------------------------------------------
