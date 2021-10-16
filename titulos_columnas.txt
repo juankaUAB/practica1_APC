@@ -1,0 +1,41 @@
+CQRSA: Gross domestic product at market prices
+CQRSA: Gross value added at basic prices, total activity
+CQRSA: Agriculture, forestry and fishing
+CQRSA: Industry, including energy
+CQRSA: Manufacturing
+CQRSA: Construction
+CQRSA: Services
+CQRSA: Distrib. trade, repairs; transp.; accommod., food serv. activ
+CQRSA: Real estate activities
+CQRSA: Public admin., education, human health
+CQR: Gross domestic product at market prices
+CQR: Gross value added at basic prices, total activity
+CQR: Agriculture, forestry and fishing
+CQR: Industry, including energy
+CQR: Manufacturing
+CQR: Construction
+CQR: Services
+CQR: Distrib. trade, repairs; transp.; accommod., food serv. activ
+CQR: Real estate activities
+CQR: Public admin., education, human health
+VNBQRSA: Gross domestic product at market prices
+VNBQRSA: Gross value added at basic prices, total activity
+VNBQRSA: Agriculture, forestry and fishing
+VNBQRSA: Industry, including energy
+VNBQRSA: Manufacturing
+VNBQRSA: Construction
+VNBQRSA: Services
+VNBQRSA: Distrib. trade, repairs; transp.; accommod., food serv. activ
+VNBQRSA: Real estate activities
+VNBQRSA: Public admin., education, human health
+VNBQR: Gross domestic product at market prices
+VNBQR: Gross value added at basic prices, total activity
+VNBQR: Agriculture, forestry and fishing
+VNBQR: Industry, including energy
+VNBQR: Manufacturing
+VNBQR: Construction
+VNBQR: Services
+VNBQR: Distrib. trade, repairs; transp.; accommod., food serv. activ
+VNBQR: Real estate activities
+VNBQR: Public admin., education, human health
+Foreign Exchange Earnings

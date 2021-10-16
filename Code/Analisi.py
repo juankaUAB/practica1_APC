@@ -6,6 +6,15 @@ from matplotlib import pyplot as plt
 import scipy.stats
 import seaborn as sns
 
+#Establir els titols de cada grafica
+title_x = []
+g = open("../titulos_columnas.txt",'r')
+for linea in g:
+    title_x.append(linea)
+g.close()
+title_x = np.array(title_x)
+title_y = np.array(["Numero de turistas"])
+
 # Funcio per a llegir dades en format csv
 def load_dataset(path, path1, path2, path3):
     dataset = pd.read_csv(path, header=0, delimiter=',')
@@ -33,10 +42,16 @@ print("Hi han valors buits/nulls? " + str(any(dataset.isnull().sum()) != 0))
 for i in range(x.shape[1]):
     if i != 41:
         plt.figure()
-        plt.ylabel('Numero de turistas')
+        plt.xlabel(title_x[i])
+        plt.ylabel(title_y[0])
         ax = plt.scatter(x[:,i],y)
         plt.savefig("../Grafiques/punts/" + "Atribut-" + str(i + 1) + ".png")
     plt.figure()
+    if (i == 41):
+        plt.xlabel(title_y[0])
+    else:
+        plt.xlabel(title_x[i])
+    
     sns.histplot(
         data    = x[:,i],
         kde     = True,
@@ -47,17 +62,18 @@ for i in range(x.shape[1]):
     plt.savefig("../Grafiques/histogrames/" + "Atribut-" + str(i + 1) + ".png")
 
 '''Apliquem un test de normalitat (el de Shapiro) a cadascuna de les variables per determinar 
-quines ens seran utils'''
+quines ens seran utils (segueixen una distribuicio normal)'''
 resultats = []
 for i in range(x.shape[1]):
     resultats.append(scipy.stats.shapiro(x[:,i]))
+resultats = np.array(resultats)
     
 with open("../results_shapiroTest/resultados.txt",'w') as f:
     f.write(" - TEST DE SHAPIRO - \n")
     f.write("---------------------\n")
     for k, res in enumerate(resultats):
-        f.write("Atributo " + str(k+1) + " : Estadistico: " + str(res.statistic) + "   |   P-Valor: " + str(res.pvalue) + "\n")
-        if res.pvalue < 0.05:
+        f.write("Atributo " + str(k+1) + " : Estadistico: " + str(res[0]) + "   |   P-Valor: " + str(res[1]) + "\n")
+        if res[1] < 0.05:
             f.write("Se puede rechazar la hipotesis de que los datos de distribuyen de forma normal\n")
         else:
             f.write("No se puede rechazar la hipotesis de que los datos de distribuyen de forma normal\n")

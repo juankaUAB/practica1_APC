@@ -1,0 +1,31 @@
+Segona sessió de treball
+
+Passos:
+1.- Hem actualitzat els histogrames per a poder veure la distribució.
+2.- Aplicar el test de SHAPIRO per a veure quines variables segueixen una distribuició normal.
+3.- Posar titol a les gràfiques.
+
+Conclusions:
+- El test de SHAPIRO ens indica quines variables segueixen una distribuició normal i ens ha donat que son:
+    -VNBQRSA: Gross domestic product at market prices
+    -VNBQRSA: Gross value added at basic prices, total activity
+    -VNBQRSA: Industry, including energy
+    -VNBQRSA: Manufacturing
+    -VNBQRSA: Services
+    -VNBQRSA: Distrib. trade, repairs; transp.; accommod., food serv. activ
+    -VNBQRSA: Public admin., education, human health
+    -VNBQR: Gross domestic product at market prices
+    -VNBQR: Gross value added at basic prices, total activity
+    -VNBQR: Industry, including energy
+    -VNBQR: Manufacturing
+    -VNBQR: Services
+    -VNBQR: Distrib. trade, repairs; transp.; accommod., food serv. activ
+    -VNBQR: Public admin., education, human health
+
+- Un cop tenim en compte aquestes variables, mirem els histogrames per a veure quines tenen una distribuicio gaussiana.
+- Tambe mirem els mapes de calor per a veure la seva relació amb la y.
+- Tenint en compte això, a priori agafarem (escollim els que tenen una correlació >= 0.8 i una distribuicio normal):
+    -VNBQRSA: Gross value added at basic prices, total activity
+    -VNBQR: Gross domestic product at market prices
+    -VNBQR: Gross value added at basic prices, total activity
+    -VNBQR: Distrib. trade, repairs; transp.; accommod., food serv. activ
