@@ -1,5 +1,3 @@
-from sklearn.datasets import make_regression
-from sklearn.preprocessing import normalize as norm
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -29,14 +27,16 @@ def load_dataset(path, path1, path2, path3):
 dataset = load_dataset("../BDD/q1.csv","../BDD/q2.csv","../BDD/q3.csv","../BDD/q4.csv")
 data = dataset.values
 
+'''Calculem el coeficient de variació per cada variable'''
+desviaciones = np.std(data,axis=0)
+with open("../desviaciones.txt",'w') as d:
+    for i, des in enumerate(desviaciones):
+        d.write("Atributo " + str(i+1) + " : " + str(des) + "\n")
+        d.write("----------------------------\n")
+
+#Dividim les dades en la entrada i la sortida
 x = data
 y = data[:,41]
-
-#Visualitzar valors buits
-print("Hi han valors buits/nulls? " + str(any(dataset.isnull().sum()) != 0))
-
-#Veure estadistiques de la BBDD
-#print(dataset.describe())
 
 #Generem grafiques de dispersió i histogrames per tots els atributs d'entrada
 for i in range(x.shape[1]):
