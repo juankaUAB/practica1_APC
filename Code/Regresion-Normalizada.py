@@ -75,6 +75,6 @@ with open("../errores-cuadraticos-normalizado.txt",'w') as s:
 #Generem grafiques per visualitzar la regressió
 for i in range(x_test.shape[1]):
     plt.figure()
-    ax = plt.scatter(x_train[:,i], y_train)
+    ax = plt.scatter(x_test[:,i], y_test)
     plt.plot(x_test[:,i], predicciones_n[i], 'r')
     plt.savefig("../Grafiques/regresiones/normalizado/Atribut-" + str(i+1) + ".png")
