@@ -20,7 +20,6 @@ def load_dataset(path, path1, path2, path3):
 dataset = load_dataset("../BDD/q1.csv","../BDD/q2.csv","../BDD/q3.csv","../BDD/q4.csv")
 data = dataset.values
 
-
 '''Funcions per aplicar la regressió'''
 def mse(v1, v2):
     return ((v1 - v2)**2).mean()
@@ -45,34 +44,37 @@ def standarize(x_train):
 x = data[:,:41]
 y = data[:,41]
 
+
+'''Ara normalitzem tots els atributs'''
+data = standarize(data)
+x_normalizado = data[:,:41]
+y = data[:,41]
+
 ''' Dividim les dades que tenim en un conjunt d'entrenament i un conjunt de test '''
 
 x_train, x_test, y_train, y_test = train_test_split(
-                                        x,
+                                        x_normalizado,
                                         y,
                                         train_size   = 0.8,
                                         random_state = 1234,
                                         shuffle      = True
                                     )
 
-'''Fem la regressió per cada atribut, sense normalitzar'''
-
-entreno = []
+entreno_n = []
 for i in range(x_train.shape[1]):
-    entreno.append(regression(x_train[:,i].reshape(-1,1),y_train))
-entreno = np.array(entreno)
-predicciones = []
+    entreno_n.append(regression(x_train[:,i].reshape(-1,1),y_train))
+entreno_n = np.array(entreno_n)
+predicciones_n = []
 for i in range(x_test.shape[1]):
-    predicciones.append(entreno[i].predict(x_test[:,i].reshape(-1,1)))
+    predicciones_n.append(entreno_n[i].predict(x_test[:,i].reshape(-1,1)))
 
-
-with open("../errores-cuadraticos.txt",'w') as s:
-    for i, pred in enumerate(predicciones):
-        s.write("Atributo " + str(i+1) + " : " + str(mse(standarize(pred.reshape(-1,1)),standarize(y_test.reshape(-1,1)))) + "\n")
-
+with open("../errores-cuadraticos-normalizado.txt",'w') as s:
+    for i, pred in enumerate(predicciones_n):
+        s.write("Atributo " + str(i+1) + " : " + str(mse(pred,y_test)) + "\n")
+ 
 #Generem grafiques per visualitzar la regressió
 for i in range(x_test.shape[1]):
     plt.figure()
     ax = plt.scatter(x_train[:,i], y_train)
-    plt.plot(x_test[:,i], predicciones[i], 'r')
-    plt.savefig("../Grafiques/regresiones/no-normalizado/Atribut-" + str(i+1) + ".png")
+    plt.plot(x_test[:,i], predicciones_n[i], 'r')
+    plt.savefig("../Grafiques/regresiones/normalizado/Atribut-" + str(i+1) + ".png")
