@@ -2,8 +2,6 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-import scipy.stats
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 
 # Funcio per a llegir dades en format csv
@@ -71,8 +69,9 @@ with open("../errores-cuadraticos.txt",'w') as s:
         s.write("Atributo " + str(i+1) + " : " + str(mse(standarize(pred.reshape(-1,1)),standarize(y_test.reshape(-1,1)))) + "\n")
 
 #Generem grafiques per visualitzar la regressió
+plt.figure()
 for i in range(x_test.shape[1]):
-    plt.figure()
     ax = plt.scatter(x_test[:,i], y_test)
     plt.plot(x_test[:,i], predicciones[i], 'r')
     plt.savefig("../Grafiques/regresiones/no-normalizado/Atribut-" + str(i+1) + ".png")
+    plt.clf()

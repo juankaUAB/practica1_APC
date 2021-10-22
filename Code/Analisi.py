@@ -38,15 +38,16 @@ with open("../desviaciones.txt",'w') as d:
 x = data
 y = data[:,41]
 
+plt.figure()
+
 #Generem grafiques de dispersió i histogrames per tots els atributs d'entrada
 for i in range(x.shape[1]):
     if i != 41:
-        plt.figure()
         plt.xlabel(title_x[i])
         plt.ylabel(title_y[0])
         ax = plt.scatter(x[:,i],y)
         plt.savefig("../Grafiques/punts/" + "Atribut-" + str(i + 1) + ".png")
-    plt.figure()
+        plt.clf()
     if (i == 41):
         plt.xlabel(title_y[0])
     else:
@@ -60,6 +61,7 @@ for i in range(x.shape[1]):
         alpha   = 0.3,
     )
     plt.savefig("../Grafiques/histogrames/" + "Atribut-" + str(i + 1) + ".png")
+    plt.clf()
 
 '''Apliquem un test de normalitat (el de Shapiro) a cadascuna de les variables per determinar 
 quines ens seran utils (segueixen una distribuicio normal)'''
@@ -87,35 +89,35 @@ with open("../results_shapiroTest/resultados.txt",'w') as f:
 #Generem grafica de correlació entre variables (CQRSA en tots els quarts del any junts)
 dataset1 = dataset.drop([str("f" + str(x)) for x in range(11,41)],axis=1)
 correlacio = dataset1.corr(method="pearson")
-plt.figure()
 plt.title("CQRSA")
 ax = sns.heatmap(correlacio, annot=True)
 plt.savefig("../Grafiques/correlacio/correlacio_CQRSA_allQuarters.png")
+plt.clf()
 
 #Generem grafica de correlació entre variables (CQR en tots els quarts del any junts)
 dataset1 = dataset.drop([str("f" + str(x)) for x in range(1,11)],axis=1)
 dataset1 = dataset1.drop([str("f" + str(x)) for x in range(21,41)],axis=1)
 correlacio = dataset1.corr(method="pearson")
-plt.figure()
 plt.title("CQR")
 ax = sns.heatmap(correlacio, annot=True)
 plt.savefig("../Grafiques/correlacio/correlacio_CQR_allQuarters.png")
+plt.clf()
 
 #Generem grafica de correlació entre variables (VNBQRSA en tots els quarts del any junts)
 dataset1 = dataset.drop([str("f" + str(x)) for x in range(1,21)],axis=1)
 dataset1 = dataset1.drop([str("f" + str(x)) for x in range(31,41)],axis=1)
 correlacio = dataset1.corr(method="pearson")
-plt.figure()
 plt.title("VNBQRSA")
 ax = sns.heatmap(correlacio, annot=True)
 plt.savefig("../Grafiques/correlacio/correlacio_VNBQRSA_allQuarters.png")
+plt.clf()
 
 #Generem grafica de correlació entre variables (VNBQR en tots els quarts del any junts)
 dataset1 = dataset.drop([str("f" + str(x)) for x in range(1,31)],axis=1)
 correlacio = dataset1.corr(method="pearson")
-plt.figure()
 plt.title("VNBQR")
 ax = sns.heatmap(correlacio, annot=True)
 plt.savefig("../Grafiques/correlacio/correlacio_VNBQR_allQuarters.png")
+plt.clf()
 
 
