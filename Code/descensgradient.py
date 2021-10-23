@@ -54,7 +54,7 @@ def descenso_gradiente(x, y, a, b, alpha, epochs):
 x = data[:,0]
 y = data[:,41]
 
-w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,1000)
+w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,500)
 
 recta = w1*x + w0
 plt.scatter(x,y)

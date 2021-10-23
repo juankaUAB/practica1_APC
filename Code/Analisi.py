@@ -16,11 +16,11 @@ title_y = np.array(["Numero de turistas"])
 # Funcio per a llegir dades en format csv
 def load_dataset(path, path1, path2, path3):
     dataset = pd.read_csv(path, header=0, delimiter=',')
-    dataset1 = pd.read_csv(path1, header=0, delimiter=',')
+    '''dataset1 = pd.read_csv(path1, header=0, delimiter=',')
     dataset2 = pd.read_csv(path2, header=0, delimiter=',')
     dataset3 = pd.read_csv(path3, header=0, delimiter=',')
     
-    dataset = pd.concat([dataset, dataset1, dataset2, dataset3],ignore_index=True)
+    dataset = pd.concat([dataset, dataset1, dataset2, dataset3],ignore_index=True)'''
     return dataset
 
 #Carregar dades de la BBDD
@@ -39,6 +39,7 @@ x = data
 y = data[:,41]
 
 plt.figure()
+
 
 #Generem grafiques de dispersió i histogrames per tots els atributs d'entrada
 for i in range(x.shape[1]):
