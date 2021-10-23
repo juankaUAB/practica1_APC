@@ -29,7 +29,7 @@ data = dataset.values
 
 '''Calculem el coeficient de variació per cada variable'''
 desviaciones = np.std(data,axis=0)
-with open("../desviaciones.txt",'w') as d:
+with open("../results/desviaciones.txt",'w') as d:
     for i, des in enumerate(desviaciones):
         d.write("Atributo " + str(i+1) + " : " + str(des) + "\n")
         d.write("----------------------------\n")
@@ -70,7 +70,7 @@ for i in range(x.shape[1]):
     resultats.append(scipy.stats.shapiro(x[:,i]))
 resultats = np.array(resultats)
     
-with open("../results_shapiroTest/resultados.txt",'w') as f:
+with open("../results/resultados_Shapiro.txt",'w') as f:
     f.write(" - TEST DE SHAPIRO - \n")
     f.write("---------------------\n")
     for k, res in enumerate(resultats):

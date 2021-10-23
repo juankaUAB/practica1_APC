@@ -64,7 +64,7 @@ for i in range(x_test.shape[1]):
     predicciones.append(entreno[i].predict(x_test[:,i].reshape(-1,1)))
 
 
-with open("../errores-cuadraticos.txt",'w') as s:
+with open("../results/errores-cuadraticos.txt",'w') as s:
     for i, pred in enumerate(predicciones):
         s.write("Atributo " + str(i+1) + " : " + str(mse(standarize(pred.reshape(-1,1)),standarize(y_test.reshape(-1,1)))) + "\n")
 
