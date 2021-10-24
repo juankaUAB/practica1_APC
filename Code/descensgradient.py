@@ -25,6 +25,10 @@ def standarize(x_train):
 dataset = load_dataset("../BDD/q1.csv","../BDD/q2.csv","../BDD/q3.csv","../BDD/q4.csv")
 data = standarize(dataset.values)
 
+def mse(v1, v2):
+    return ((v1 - v2)**2).mean()
+
+
 '''Funcions per fer el descens del gradient'''
 
 def coste(x, y, a, b):
@@ -51,13 +55,84 @@ def descenso_gradiente(x, y, a, b, alpha, epochs):
         
     return a, b, hist_coste
 
-x = data[:,0]
+
+'''Fem la regressió per cada atribut, sense normalitzar'''
+plt.figure()
+
+'''descens de gradient per l'atribut 22'''
+x = data[:,21]
 y = data[:,41]
 
-w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,500)
+w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,1000)
 
 recta = w1*x + w0
 plt.scatter(x,y)
 plt.plot(x, recta)
+
+
+valors22 = []
+for valor in data[:,21]:
+    valors22.append(valor*w1 + w0)
+error1 = mse(valors22, data[:,21])
+plt.savefig("../Grafiques/descensgradient/""atribut22.png")
+plt.clf()
+
+
+'''descens de gradient per l'atribut 31'''
+x = data[:,30]
+y = data[:,41]
+
+w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,1000)
+
+recta2 = w1*x + w0
+plt.scatter(x,y)
+plt.plot(x, recta2)
+
+valors31 = []
+for valor in data[:,30]:
+    valors31.append(valor*w1 + w0)
+error2 = mse(valors31, data[:,30])
+
+plt.savefig("../Grafiques/descensgradient/""atribut31.png")
+plt.clf()
+
+'''descens de gradient per l'atribut 32'''
+x = data[:,31]
+y = data[:,41]
+
+w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,1000)
+
+recta3 = w1*x + w0
+plt.scatter(x,y)
+plt.plot(x, recta3)
+
+valors32 = []
+for valor in data[:,31]:
+    valors32.append(valor*w1 + w0)
+error3 = mse(valors32, data[:,31])
+
+plt.savefig("../Grafiques/descensgradient/""atribut32.png")
+plt.clf()
+
+'''descens de gradient per l'atribut 38'''
+x = data[:,37]
+y = data[:,41]
+
+w0, w1, cost_historial = descenso_gradiente(x,y,1,1,0.05,1000)
+
+recta4 = w1*x + w0
+plt.scatter(x,y)
+plt.plot(x, recta4)
+
+valors38 = []
+for valor in data[:,37]:
+    valors38.append(valor*w1 + w0)
+error4 = mse(valors38, data[:,37])
+
+plt.savefig("../Grafiques/descensgradient/""atribut38.png")
+
+
+
+
 
 
