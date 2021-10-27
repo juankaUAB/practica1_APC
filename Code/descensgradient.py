@@ -59,6 +59,7 @@ def descenso_gradiente(x, y, a, b, alpha, epochs):
 '''Fem la regressió per cada atribut, sense normalitzar'''
 plt.figure()
 
+
 '''descens de gradient per l'atribut 22'''
 x = data[:,21]
 y = data[:,41]
@@ -124,12 +125,14 @@ recta4 = w1*x + w0
 plt.scatter(x,y)
 plt.plot(x, recta4)
 
-valors38 = []
+valors15 = []
 for valor in data[:,37]:
-    valors38.append(valor*w1 + w0)
-error4 = mse(valors38, data[:,37])
+    valors15.append(valor*w1 + w0)
+error4 = mse(valors15, data[:,37])
 
 plt.savefig("../Grafiques/descensgradient/""atribut38.png")
+plt.clf()
+
 
 
 
